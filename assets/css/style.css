@@ -24,8 +24,10 @@ h2 {
 
 #menu {
     font-size: 110%;
+    font-family: "Oswald";
     list-style-type: none;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 #logo, #menu {
