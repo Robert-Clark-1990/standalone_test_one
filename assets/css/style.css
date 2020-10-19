@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Lato";
+    color: #4a4a4f;
+}
+
+h2 {  
+    font-family: "Oswald";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777777;
+}
+
+#logo {
+    float: left;
+    font-size: 200%;
+    margin-left: 30px;
+}
+
+#menu {
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 2px;
+}
+
+#logo, #menu {
+    line-height: 80px;
+}
+
+#menu li {
+    float: right;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
