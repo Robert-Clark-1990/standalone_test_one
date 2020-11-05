@@ -176,23 +176,12 @@ footer {
 /*------------------------------------------------homepage */
 
 
-
-
-
-
 /* Credit to Creative Programmer for the image hover code */
 
-.swap-on-hover {
-    position: relative;
-    margin: 0;   /* CHANGED ---- removed the auto bit from here */
-    max-width: 50%;
-}
 
 .swap-on-hover img {
     position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
+    top: 10;
     max-height: 900px;
 }
 
@@ -333,8 +322,12 @@ button[type="submit"]:hover {
 		display: none;
 	}
 
+    .uppercase {
+        text-align: center;
+    }
+
     h1 {
-        font-size: 300%;
+        font-size: 500%;
     }
 
     /* Credit to Andor Nagy for the responsive navbar that was used as a guideline and adapted for this project */
