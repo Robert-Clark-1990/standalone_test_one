@@ -1,45 +1,399 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Roboto&display=swap');
+
+/*------------------------------------------------background */
+
+
+/*------------------------------------------------fonts */
+
+h1,h2,h3,h4 {
+    font-family: "Alatsi", sans-serif;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: #fafafa;
+}
+
+h1 {
+    color: #fafafa;
+    font-size: 600%;
+}
+
+h2 {
+    color: #7600e4;
+}
+
+h3 {
+    color: #fafafa;
+}
+
+h4 {
+    color: #7600e4;
+}
+
+a {
+	color: #fafafa;
+    font-family: "Alatsi", sans-serif;
+    text-transform: uppercase;
+}
+
+/*------------------------------------------------Special Paddings / margins / text */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+ .link-plug {
+    text-decoration: none;
+    color: #7600e4;
+}
+
+.link-plug:hover {
+    color: #c224b5;
+    text-decoration: none;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;  
+}
+
+.section #section-fit {
+    max-width: 80%;
+}
+
+.div .col-md {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/*------------------------------------------------header */
+
+nav { 
+	margin:0;
+	padding: 0;
+}
+
+nav ul {
+	text-align: center;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	margin: 0px;
+	display:inline;
+	background-color: rgba(0, 0, 0, 0);
+	}
+
+nav a {
+	display:inline-block;
+	padding:14px 20px;	
+	color:#fafafa;
+	font-size:20px;
+    letter-spacing: 2px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	color: #7600e4;
+    text-decoration: none;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out; 
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; 
+}
+
+/*------------------------------------------------footer */
+
+footer {
+    background-color: #aa3ee8;
+    color: #fafafa;
     margin: 0;
     padding: 0;
-    border: 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
 }
 
-body {
-    font-family: "Lato";
-    color: #4a4a4f;
+#footer-details {
+    z-index: 2;
 }
 
-h2 {  
-    font-family: "Oswald";
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #777777;
+.social-links {
+    padding: 30px 0px 0px 0px;
 }
 
-#logo {
-    float: left;
+.social-links li a i {
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 40px;
+    line-height: 10px;
+    color: #fafafa;
+}
+
+.social-links li a i:hover {
+    color: #7600e4;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+#footer-image-row {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-image {
+    max-width: 90%;
+    z-index: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*------------------------------------------------homepage */
+
+
+
+
+
+
+/* Credit to Creative Programmer for the image hover code */
+
+.swap-on-hover {
+    position: relative;
+    margin: 0;   /* CHANGED ---- removed the auto bit from here */
+    max-width: 50%;
+}
+
+.swap-on-hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-height: 900px;
+}
+
+.swap-on-hover .swap-on-hover-head-image-one {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.swap-on-hover:hover > .swap-on-hover-head-image-one {
+    opacity: 0;
+}
+
+/*------------------------------------------------about */
+
+.about-header {
     font-size: 200%;
-    margin-left: 30px;
 }
 
-#menu {
-    font-size: 110%;
-    font-family: "Oswald";
-    list-style-type: none;
-    letter-spacing: 2px;
+.about-image {
+    max-height: 80%;
+    position: fixed;
+    bottom: 0;
+    right: 5;
+}
+
+.about-text {
+    height: 80%;
+}
+
+/*------------------------------------------------podcast */
+
+.podcast-image {
+    max-height: 80%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+button[type="support"] {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #7600e4;
+    border: none;
+    font-family: "Alatsi", sans-serif;
+}
+
+button[type="support"]:hover {
+    background-color: #c224b5;
+    color: #fafafa;
+}
+
+.btn-support a {
+    color: #fafafa;
+    text-decoration: none;
+    font-family: "Alatsi", sans-serif;
     text-transform: uppercase;
 }
 
-#logo, #menu {
-    line-height: 80px;
+.podcast-icons {
+    margin: 0;
+    padding: 0;
 }
 
-#menu li {
-    float: right;
-    margin-right: 30px;
+/*------------------------------------------------standup */
+
+.standupclip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#menu a {
-    text-decoration: none;
-    color: inherit;
+/*------------------------------------------------news */
+
+.news-img {
+    max-width: 60%;
+    padding-left: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom-image {
+    display: block;
+    max-width: 80%;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-row {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*------------------------------------------------contact */
+
+.center-form {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #7600e4;
+    border: none;
+    font-family: "Alatsi", sans-serif;
+}
+
+button[type="submit"]:hover {
+    background-color: #c224b5;
+    color: #fafafa;
+}
+
+.form-control {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #7600e4;
+
+}
+
+/*------------------------------------------------Media Query */
+
+@media all and (max-width : 768px) {
+
+    .section #section-fit {
+    max-width: 90%;
+}
+
+	nav {
+		margin: 0;
+	}
+
+	.menu {
+		display: none;
+	}
+
+    h1 {
+        font-size: 300%;
+    }
+
+    /* Credit to Andor Nagy for the responsive navbar that was used as a guideline and adapted for this project */
+
+	.toggle {
+		display: block;
+		background-color: rgba(0, 0, 0, 0.2);
+		padding:14px 20px;	
+		color:#fafafa;
+        font-family: "Alatsi", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: #7600e4;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+
+    .about-image .podcast-image {  
+        visibility: hidden;
+    }
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+}
+
+@media (min-width: 992) {  
+    .center-form {
+        max-width: 70%;
+    }
 }
